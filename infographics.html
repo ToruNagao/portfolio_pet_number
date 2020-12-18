@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+
+	<!-- Favicon links -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+
+	<!-- Mailchimp css -->
+	<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+	<!-- Own stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/variables.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/infographics.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/tooltip.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap_grid.css">
+	
+
+	<!-- Plugin stylesheet -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	
+
+	<script src="./js/jquery-3.3.1.js"></script>
+	<script src="./js/fade_in.js"></script>
+	<!-- <script src="./js/smooth_scroll.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./js/jquery.stellar.js"></script>
+	<script>
+		$(function(){
+			$('#nav').load('navigation_black.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+
+	<title>Infographics - Pet Number</title>
+</head>
+	
+
+<body>
+	<div id="nav"></div>
+	<div class="section-container">
+		<div id="infographics-section">
+				<h1 data-aos="fade-in">What Pet Number can do?</h1>
+				<a href='./images/pet_number_can_do_white.png' target="blank"><img src="./images/pet_number_can_do.png" data-aos="fade-in"></a>
+				<h1 data-aos="fade-in">Supply Chain</h1>
+				<a href='./images/updateor_white.png' target="blank"><img src="./images/updateor.png" data-aos="fade-in"></a>
+				<h1 data-aos="fade-in">Pet Number Agent Service & Referral Program</h1>
+				<a href='./images/agents_new_white.png' target="blank"><img src="./images/agents_new.png" data-aos="fade-in"></a>
+				<h1 data-aos="fade-in">Pet Number Premium Membership & Profit Model</h1>
+				<a href='./images/premium_new_white.png' target="blank"><img src="./images/premium_new.png" data-aos="fade-in"></a>
+				<h1 data-aos="fade-in">Pet Number SNS Platform</h1>
+				<a href='./images/matching_white.png' target="blank"><img src="./images/matching.png" data-aos="fade-in"></a>
+				<br><br><br><br><br><br><br><br>
+			</div>
+	</div>
+	<!-- Mobile menu -->
+	<a href="./index.html"><img src="./images/logo.png" id="mobile-logo"></a>
+	<div class="mobile-menu-container font-white">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="mobile-menu-icon">&nbsp;&#9776;&nbsp;</span>
+		<div id="mySidenav" class="sidenav center">
+		 	<img src="./images/pet_number_logo_fulllogo_full.png" class="image-50">
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		 	<a href="./about_us.html">ABOUT US</a></a>
+		 	<a href="./index.html#mission-section">PET NUMBER PROJECT</a>
+		 	<a href="./contact_us.html">CONTACT US</a>
+		 	<a href="#">PET REGISTRY</a>
+		 	<a href="./jp/index_new.html">日本語</a>
+		</div>
+	</div>
+
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("mobile-menu-icon").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mobile-menu-icon").style.display = "block";
+		}
+		</script>
+
+	<div id="footer"></div>
+
+	<script type="text/javascript">
+		AOS.init({
+			duration: 500,
+			disable: 'mobile' ,
+		});
+
+		$.stellar();
+	</script>
+</div>
+</body>
+</html>

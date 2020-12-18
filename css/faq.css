@@ -1,0 +1,137 @@
+#faq-body{
+		position: relative;
+	top: 15vh;
+}
+
+#faq-caption{
+text-align: center;    
+}
+
+#faq-caption img{
+    width: 40vw !important;
+     margin: 5% 0%;
+}
+
+#faq-caption h1:nth-child(1){
+
+}
+
+h2{
+	font-size: 1.5em !important;
+	margin: 0 !important;
+}
+
+.font-big{
+	font-size: 1.4em;
+	text-decoration: none !important;
+	display: inline-block;
+}
+
+#faq-body hr{
+	border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+#faq-body a{
+    color: black !important;
+    text-decoration-color: #407BFA !important;
+    text-decoration: underline;
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 15px 0;
+    margin-bottom: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 100px;
+}
+
+.active, .accordion:hover {
+    background-color: #eee;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 40px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ h2.panel{
+
+}
+
+.accordion::before{
+	content: "Q. ";
+	color: blue;
+}
+
+.panel::before{
+	content: "A. ";
+	color: #EA1F53;
+}
+
+h2.faq-heading{
+	margin : 60px 0 !important;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.single-question{
+	margin-bottom: 20px;
+}
+
+#faq-body img{
+ 
+}
+
+img.faq-heading-image {
+        width: 50px !important;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    .mobile-br{
+        display: block;
+    }
+    #faq-caption h1:nth-child(1){
+        font-size: 1.5em;
+    }
+
+    #faq-caption img{
+        width: 60vw !important;
+         margin: 5% 0%;
+    }
+
+    #faq-body h2{
+      font-size: 1.2em !important;
+    }
+
+    .panel {
+        padding: 0;
+    }
+
+}
+

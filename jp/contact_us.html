@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+
+	<!-- Favicon links -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+
+	<!-- Mailchimp css -->
+	<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+	<!-- Own stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../css/variables.css">
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact_us.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/tooltip.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap_grid.css">
+	
+
+	<!-- Plugin stylesheet -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	
+
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/fade_in.js"></script>
+	<!-- <script src="../js/smooth_scroll.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../js/collapsible.js"></script>
+	<script>
+		$(function(){
+			$('#nav').load('navigation_black.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+
+	<title>Contact Us - Pet Number</title>
+</head>
+	
+
+<body>
+	<div id="nav"></div>
+		
+	
+	<div id="contact-us-cover">
+		<!-- <img src="../images/contact_us_cover_2.png"> -->
+		<!-- <div id="contact-us-caption"><h1>Let's Connect</h1>
+			<p>We make a better society for humans and pets together.</p></div> -->
+	</div>
+
+	<div class="section-container">
+		<div id="contact-us-body">
+			<div id="contaut_us_caption">
+			<h1>お問い合わせ</h1>
+				<h3 class="contact-us-caption font-Poppins-Light">人間とペットにとって<span class="font-red underline-black">より良い</span>社会を作る。</h3>
+				<img src="../images/contact_us_connect.png" class="contact_us_connect">
+			</div><hr>
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>あなたと大事なペットの為に。</h2>
+					<h2  class="font-red font-Poppins-Light">あなたもペットナンバープロジェクトの一員です。</h2>
+					<p>ペットナンバーは皆様からのお問い合わせ、ご意見、更にはプロジェクトの新アイデア等をお待ちしております！コミュニティの助けを受け、ペットナンバープロジェクトは成長していきます。</p>
+
+					<h2  class="font-Poppins-Light">よくある質問について。</h2>
+					<p>ペットナンバープロジェクトに寄せられる、一般的な質問については下記のページで参照頂けます。</p>
+					<h2 class="font-Poppins-Light link"><a href="../faq.html">&rarr; よくある質問へ.</a></h2>
+					<img src="../images/pet_number_logo_full.png" class="contact-us-placeholder-image">
+				</div>
+
+				<div class="col-lg-6">
+					<div id="general-inquiry">
+					<h2>一般お問い合わせ</h2>
+					<form action="./send_inquiry.php" method="post">
+						<input type="text" id="lname" name="lastname" placeholder="苗字" class="form-name" required><input type="text" id="fname" name="firstname" placeholder="名前" class="form-name" required>
+						
+						<input type="email" id="email" name="email" placeholder="メールアドレス" required>
+						<input type="text" id="subject" name="subject" placeholder="件名" required>
+						<textarea type="textarea" id="comments" name="comments" placeholder="メッセージ" class="form-comments" required></textarea>
+						<input type="submit" value="送信">
+					</form>
+					</div>
+					<br><br><br>
+					<div id="media-inquiry">
+					<h2>メディアお問い合わせ</h2>
+					<form action="./send_inquiry_media.php" method="post">
+						<input type="text" id="lnam_media" name="lastname_media" placeholder="苗字" class="form-name" required>
+						<input type="text" id="fname_media" name="firstname_media" placeholder="名前" class="form-name" required>
+						
+						<input type="text" id="cname_media" name="cname_media" placeholder="会社名" required>
+						<input type="email" id="email_media" name="email_media" placeholder="メールアドレス" required>
+						<input type="text" id="subject_media" name="subject_media" placeholder="件名" required>
+
+						<textarea type="text" id="comments_media" name="comments_media" placeholder="メッセージ" class="form-comments" required></textarea>
+						<input type="submit" value="送信" class="submit-media">
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-spacing"></div>
+	
+
+	<div id="footer"></div>
+
+	<script type="text/javascript">
+		AOS.init({
+			duration: 500,
+			disable: 'mobile' ,
+		});
+
+	</script>
+</div>
+</body>
+</html>
