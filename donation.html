@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+
+	<!-- Favicon links -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+
+	<!-- Mailchimp css -->
+	<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+	<!-- Own stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/variables.css">
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/donation.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/tooltip.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap_grid.css">
+	
+
+	<!-- Plugin stylesheet -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	
+
+	<script src="./js/jquery-3.3.1.js"></script>
+	<script src="./js/fade_in.js"></script>
+	<!-- <script src="./js/smooth_scroll.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./js/collapsible.js"></script>
+	<script>
+		$(function(){
+			$('#footer').load('footer.html');
+		});
+	</script>
+
+	<title>PetRegi ICO</title>
+</head>
+	
+
+<body>
+	<div id="nav">
+		<ul>
+			<li id="nav-logo"><a href="https://petregi.io/"><img src="./images/logo_nav_black.png""></a></li>
+			<div id="nav-menu-black">
+				<li><a href="#mission-section">ABOUT US</a></li>
+				<li><a href="#mission-section">PETREGI PROJECT</a></li>
+				<li><a href="#footer-section">CONTACT</a></li>
+				<li><button id='nav-button'>PET REGISTRY</button></li>
+				<li class="lang-switcher"><img src="./images/lang_en.png" class="image-flag" id='lang_switcher'>
+					<ul>
+		                <a href="./jp/index.html"><li><img src="./images/lang_jp.png" class="image-flag" id='lang_switcher'></a>
+		            </ul>
+	            </li>
+			</div>
+		</ul>
+	</div>
+
+	<div class="section-container">
+		<div id="donation-body">
+			<h1>Any contribution helps our project to save more lives.</h1>
+		
+			<h2>Cryptocurrency</h2>
+			BTC:<BR>
+			ETH:<BR>
+			PETT: <BR>
+
+			<h2>Amazon Smile</h2>
+			<P>How do I register and receive donations for my charitable organization?<BR>
+
+			<div class="text-left">
+			Registering your organization is easy. In order to register and receive donations, you must be an official representative of an eligible organization, and then follow these easy steps:<BR><BR>
+
+			Search for your charitable organization by name or EIN number and then select the organization you represent. Be sure to confirm you are selecting the correct organization, as many charitable organizations have similar names.<BR>
+			Create an organization administrator account and accept the AmazonSmile Participation Agreement on behalf of your organization.<BR>
+			Verify your email address (we recommend that you use an email address that is associated with your charitable organization).<BR>
+			Submit your organization’s bank account information.<BR>
+			Upload a copy of a voided check or bank statement to verify your organization’s bank account information.</P></div>
+			Link: https://org.amazon.com/
+
+		</div>
+	</div>
+	<div class="row-spacing"></div>
+	<!-- Mobile menu -->
+	<img src="./images/logo_trans_1_black.png" id="mobile-logo"> 
+	<div class="mobile-menu-container font-white">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="mobile-menu-icon">&nbsp;&#9776;&nbsp;</span>
+		<div id="mySidenav" class="sidenav center">
+		 	<img src="./images/logo_full.png" class="image-50">
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		 	<a href="#mission-section"><a href="">ABOUT US</a></a>
+		 	<a href="#mission-section">PETREGI PROJECT</a>
+		 	<a href="#footer-section">CONTACT</a>
+		 	<a href="#">PET REGISTRY</a>
+		 	<a href="./jp/index_new.html">日本語</a>
+		</div>
+	</div>
+
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("mobile-menu-icon").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mobile-menu-icon").style.display = "block";
+		}
+		</script>
+
+	<div id="footer"></div>
+
+	<script type="text/javascript">
+		AOS.init({
+			duration: 500,
+			disable: 'mobile' ,
+		});
+
+	</script>
+</div>
+</body>
+</html>

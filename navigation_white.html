@@ -1,0 +1,36 @@
+			<ul>
+				<li id="nav-logo"><a href="https://petnumber.io/"><img src="./images/pet_number_logo_horizontal_white.png""></a></li>
+				<div id="nav-menu">
+					<li><a href="./about_us.html">ABOUT US</a></li>
+					<li><a href="./index.html#mission-section">PET NUMBER PROJECT</a></li>
+					<li><a href="./contact_us.html">CONTACT US</a></li>
+					<li><button id='nav-button'>PET REGISTRY</button></li>
+					<li><a href="./jp/index.html"><img src="./images/lang_jp.png" class="image-flag"></a></li>
+			</ul>
+	<!-- Mobile menu -->
+	<a href="https://petnumber.io"><img src="./images/mobile_logo_white.png" id="mobile-logo"></a>
+
+	<div class="mobile-menu-container font-white">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="mobile-menu-icon">&nbsp;&#9776;&nbsp;</span>
+		<div id="mySidenav" class="sidenav center">
+		 	<img src="./images/pet_number_logo_full.png" class="image-50">
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		 	<a href="./about_us.html">About Us</a>
+		 	<a href="#mission-section">Pet Number Project</a>
+		 	<a href="./contact_us.html">Contact Us</a>
+		 	<a href="#">Pet Registry</a>
+		 	<a href="./jp/index.html">日本語</a>
+		</div>
+	</div>
+
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("mobile-menu-icon").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mobile-menu-icon").style.display = "block";
+		}
+	</script>

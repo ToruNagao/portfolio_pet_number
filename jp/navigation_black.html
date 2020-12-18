@@ -1,0 +1,43 @@
+		<ul>
+			<li id="nav-logo"><a href="https://petnumber.io/jp"><img src="../images/pet_number_logo_horizontal.png"></a></li>
+			<div id="nav-menu-black">
+				<li><a href="./about_us.html">ペットナンバーとは</a></li>
+				<li><a href="./index.html#mission-section">ペットナンバープロジェクト</a></li>
+				<li><a href="./contact_us.html">コンタクト</a></li>
+				<li><button id='nav-button' >ペットレジストリー</button></li>
+				<li><a href="../index.html"><img src="../images/lang_en.png" class="image-flag"></a></li>
+				<!-- <li class="lang-switcher"><img src="../images/lang.png" class="image-flag" id='lang_switcher'>
+		               	<ul>
+		                    <a href="./index.html"><li><img src="../images/lang_jp.png" class="image-flag" id='lang_switcher'></li></a><br>
+		                    <a href="../index.html"><li><img src="../images/lang_en.png" class="image-flag" id='lang_switcher'></li></a>
+		                </ul>
+		            </li> -->
+			</div>
+		</ul>
+
+		<!-- Mobile menu -->
+	<a href="./index.html"><img src="../images/mobile_logo_black.png" id="mobile-logo"></a>
+	<div class="mobile-menu-container font-white">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="mobile-menu-icon">&nbsp;&#9776;&nbsp;</span>
+		<div id="mySidenav" class="sidenav center">
+		 	<img src="../images/pet_number_logo_full.png" class="image-50">
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		 	<a href="./about_us.html">ペットナンバーとは</a>
+		 	<a href="./index.html#mission-section">ペットナンバープロジェクト</a>
+		 	<a href="./contact_us.html">コンタクト</a>
+		 	<a href="#">ペットレジストリー</a>
+		 	<a href="../index.html">English</a>
+		</div>
+	</div>
+
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("mobile-menu-icon").style.display = "none";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mobile-menu-icon").style.display = "block";
+		}
+		</script>
